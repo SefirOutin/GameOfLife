@@ -15,7 +15,7 @@ OBJS		=	$(patsubst $(SRCS_DIR)/%.c,$(OBJS_DIR)/%.o,$(SRCS))
 CC			=		clang
 MLX			=		-L./minilibx-linux
 MLXFLAGS	=		-lm -lmlx -lX11 -lXext
-CFLAGS		=		-Wall -Werror -Werror -I./inc
+CFLAGS		=		-Wall -Werror -Werror -I./inc -g3
 
 $(NAME):	$(OBJS) 
 				$(MAKE) -C minilibx-linux

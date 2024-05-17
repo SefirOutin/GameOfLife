@@ -6,7 +6,7 @@
 /*   By: soutin <soutin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/13 13:46:16 by soutin            #+#    #+#             */
-/*   Updated: 2024/05/17 16:02:39 by soutin           ###   ########.fr       */
+/*   Updated: 2024/05/17 16:28:31 by soutin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,7 @@ typedef struct s_data
 {
 	void	*pmlx;
 	void	*pwin;
+	bool	**grid;
 }			t_data;
 
 int			init_img(t_data *data, t_img *img, int width, int height);
